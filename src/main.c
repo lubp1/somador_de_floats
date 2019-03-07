@@ -92,13 +92,7 @@ int main() {
   } while (entrada != '\n');
 
 
-  //Para imprimir a saída, consideramos que todos os casos testes imprimem números com 0 ou 1 casas decimais, mas a lógica poderia ser extendida
-  //para quantas casas fossem necessárias
-  if (soma - (int)soma == 0) {
-    printf("%.0f\n", soma);
-  } else {
-    printf("%.1f\n", soma);
-  }
+  printf("%g\n", soma);
 
   free(maquina);
   return 0;
